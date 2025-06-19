@@ -1,4 +1,4 @@
-a html css  project  	`#RRGGBB`
+a html css  project  	`#FF0000`
 open visual studio code 
 select the folder 
 now you can chang anything you want 
