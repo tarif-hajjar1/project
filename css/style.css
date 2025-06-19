@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: auto;
+}
+body{
+    color: #615435;
+    font-size: 13px;
+    font-family: 'Open Sans',sans-serif;
+}
+/* Header Section */
+header{
+    margin: 10px 0px;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+.middleheader{
+    
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+.middleheader ul {
+    
+    list-style: none;
+    display:flex;
+    padding-right: 10px;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.middleheader ul a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+.middleheader ul a:hover {
+    color:#0e76bc ;
+}
+.middleheader ul:first-child {
+    color:#0e76bc
+}
+.header__right img{
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+.header__bottom{
+    
+    position: absolute;
+    bottom: -140px;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+.header__bottom img{
+    height: 20vh;
+    width: 100%;
+    
+}
+
+.header .middleheader .menu{
+    display: none;
+}
+/* Header End */
+
+
+/* Image Section Start */
+.image{
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 1200px;
+    background-image: url("../images/shutterstock_667100452-scaled.jpg");
+    background-size: cover;
+}
+
+.image__bottom img{
+    width: 100%;
+    height: 400px;
+    bottom: -1px;
+    position: absolute;
+
+}
+.image__bottom p{
+    width: 100px;
+    height: 100px;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 218px;
+    opacity: 50%;
+    left: 38%;
+}
+.image__first-p,.image__secondp
+{   left: 260px;
+    position: absolute;
+    bottom: 50%;
+    width: 500px;
+    height: 65px;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    box-shadow: 2px 8px 7px black;
+}
+.image__secondp{
+    bottom: 44.2%;
+    width: 350px;
+    background-color: #0e76bc;
+    
+}
+.image__first-p p ,.image__secondp p  {
+    padding-top: 16px;
+    font-size: 2rem;   
+    font-weight: 900;
+    color: #0e76bc;
+    text-align: center;
+}
+.image__secondp p{
+    color: #fff;
+}
+.afterone{
+    position: absolute;
+    right: -37px;
+    top: -28px;
+}
+.aftertow{
+    position: absolute;
+    right: -32px;
+    top: -1px;
+}
+/* Image End */
+
+/* Middle about Start */
+.middle-about{
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: flex-start;
+    margin: 0px auto;
+    justify-content: center;
+    flex-direction: row;
+}
+.middle-about__left{
+    width: 500px;
+}
+.middle-about__left p
+{
+    line-height: 1.5rem;
+}
+.service-info{
+    margin-top: 100px;
+    background-color: #eee;
+    box-shadow: inset 0px 10px 50px 0px black;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.service-info h1,h2{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    
+}
+.service-info h2{
+    margin-bottom: 50px;
+    color: #0e76bc;
+    
+}
+.service-info >img{
+    display: block;
+    padding-top: 100px;
+    margin: 60px 48% 0 48%;
+}
+.service-card{ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.service-card .card{
+
+    position: relative;
+    width: 44vh;
+    
+}
+.service-card .card::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    color: white;
+    right: 4px;
+    width: 167px;
+    height: 51px;
+    background-image: url(	https://talicontracting.com/assets/images/small_service.png);
+    
+
+    
+}
+.service-card .card::before{
+    content: "+Detials";
+    z-index: 1;
+    position: absolute;
+    top: 14px;
+    color: white;
+    right: 12px;
+    width: 50px;
+    height: 51px;
+    
+}
+.service-card .card img{
+    
+    width: 100%;
+    height: 350px;
+    border: 4px solid #fff;
+    border-bottom:6px solid black ;
+    border-radius: 8px;
+}
+.service-card .card:hover,
+.service-card .card:hover::after,
+.service-card .card:hover img { 
+    color: #0e76bc;
+    border-bottom-color: #0e76bc;
+    background-position: right;
+}
+
+.service-card .card p{
+    
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px;
+}
+.service-info .news{   
+    background-color: #0e76bc;
+    box-shadow: -6px 8px 7px black;
+    position: absolute;
+    width: 74%;
+    height: 40px;
+    top: -20px;
+    left: 170px;
+}
+.service-info .news h1{   
+    text-align: left;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.service-info .news .newsborder { 
+    width: 89%;
+    height: 100%;
+
+    background-color: #333;
+    position: absolute;
+    right: 2px;
+    top: 3px;
+}
+.service-info .news .newsborder p { 
+    color: #fff;
+    text-align: center;
+    
+}
+.service-info .news img{
+    position: absolute;
+    left: -11px;
+    top: 0px;
+}
+.service-info .bottom-image{
+    width: 100%;
+    margin-top: 70px;
+    height: 226px;
+    background-image: url(https://talicontracting.com/assets/images/why_top.png);
+    background-repeat: no-repeat;
+    background-position-x: -331px;
+}
+.middle-slide{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.middle-slide .slides{
+    width: 50%;
+}
+.middle-slide .slides >img{
+    margin-left: 10px;
+    position: absolute;
+    top: -30px;
+}
+.middle-slide .slides h1{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.middle-slide__header{
+
+}
+.middle-slide .middle-slide__content{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    gap: 10px;
+    
+}
+.middle-slide .middle-slide__content .slides-content{
+ width: 49%;   
+}
+.middle-slide .middle-slide__content .slides-content h1{
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-left: 5px;
+}
+.middle-slide .slide-image{
+   position: absolute;
+    top: 70px;
+    right: 0;
+    background-image: url(https://talicontracting.com/assets/images/slide3_building.png);
+    width: 330px;
+    z-index: 1;
+    background-size: cover;
+    height: 450px;
+}
+.last-slide{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    position: relative;
+}
+.last-slide >img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.last-slide .last-slide__content{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+
+.last-slide .last-slide__content .content{
+    width: 255px;
+    height: auto;
+    
+}
+.last-slide .last-slide__content .content:first-child{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    align-items: left;
+    justify-content: center;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.last-slide .last-slide__content .content:first-child img{
+    position: absolute;
+    left: 39px;
+    top: 112px;
+    
+}
+.last-slide .last-slide__content .content:first-child button{
+    
+    width: 80%;
+    height: 30px;
+    color: #fff;
+    background-color: #555;
+}
+.last-slide .last-slide__content .content:first-child button:hover{
+    background-color: #0e76bc;
+}
+.last-slide .last-slide__content .content:nth-child(2)
+,.content:nth-child(3)
+,.content:nth-child(4)
+{
+    border:3px solid #d3d3d3;
+    position: relative;
+    background-color: #fff;
+    
+    height: 100%;
+}
+.last-slide .last-slide__content .content .cut
+{position: absolute;
+    width: 100%;
+    height: 20%;
+    background-image: url(https://talicontracting.com/assets/images/project_triangle.png);
+    background-repeat: no-repeat;
+    bottom: 117px;
+    background-position: left;
+}
+
+
+.last-slide .last-slide__content .content:nth-child(2) > img,
+.last-slide .last-slide__content .content:nth-child(3) > img,
+.last-slide .last-slide__content .content:nth-child(4) > img
+{
+    width: 100%;
+    height: 290px;
+}
+.last-slide .last-slide__content .content ul
+{color: #0e76bc;
+    font-size: 1.3rem;
+    margin:40px 0 ;
+    padding-left: 30px;
+}
+
+.last-slide .last-slide__content .content hr
+{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 26px;
+}
+.last-slide .last-slide__content .content p
+{
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.last-slide .last-slide__content .content:nth-child(2):hover,
+.last-slide .last-slide__content .content:nth-child(3):hover,
+.last-slide .last-slide__content .content:nth-child(4):hover
+{
+background-color: #0e76bc;
+border-color: #0e76bc;
+
+}
+
+.last-slide .last-slide__content .content:nth-child(2):hover li,
+.last-slide .last-slide__content .content:nth-child(3):hover li,
+.last-slide .last-slide__content .content:nth-child(4):hover li{
+color: #fff;
+}
+.last-slide .last-slide__content .content:nth-child(2):hover .cut,
+.last-slide .last-slide__content .content:nth-child(3):hover .cut,
+.last-slide .last-slide__content .content:nth-child(4):hover .cut{
+    background-position: right;
+}
+
+footer{
+    margin-top: 20px;
+    position: relative;
+    background-color: #333;
+
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+footer >img{
+    height: 115px;
+    position: absolute;
+    top: -20px;
+    width: 100%;
+}
+footer .squer{
+    position: relative;
+    width: 280px;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: centerS;
+    background-color: #0e76bc;
+}
+footer .squer img:first-child{
+    position: absolute;
+    width: 100%;
+    top: -20px;
+}
+
+footer .squer img:nth-child(2){
+    position: absolute;
+    top: 9px;
+    left: 102px;
+
+}
+
+footer .squer h1{
+    padding-left: 40px;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+footer .squer button{
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    width: 70%;
+    height: 2.3rem;
+    margin-left: 30px;
+    margin-right: auto;
+    border-left: 4px solid white;
+}
+footer .squer button:hover{
+    background-color: #fff;
+    color: black;
+    border-left: 4px solid #333;
+
+}
+footer h1:first-of-type{
+    margin-top: 40px;
+}
+footer .links{
+    
+    display: flex;
+    flex-direction:row;
+    justify-content: cenetr;
+    gap: 100px;
+    align-items: center;
+}
+footer .links .the-links 
+{
+    gap: 40px;
+}
+footer .links .the-links h1 a 
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    
+}
+footer .links .the-links h1 a:hover
+{
+
+    color:#0e76bc;
+}
+footer .links .the-links h1 
+{
+    margin: 0;
+    
+}
+footer .finale{
+    position: absolute;
+    bottom: 0px;
+    right: 200px;
+    color: #fff;
+}
+@media (max-width: 1200px) {
+
+
+}
+@media only screen and (max-width: 992px) {
+    .middle-slide .slide-image {
+        display: none;
+    }
+    .middle-slide .middle-slide__content .slides-content {
+        width: 100%;
+    }
+    .last-slide {
+        height: 138vh;
+    }
+    .last-slide .last-slide__content .content:nth-child(2) > img, .last-slide .last-slide__content .content:nth-child(3) > img, .last-slide .last-slide__content .content:nth-child(4) > img {
+    width: 100%;
+    height: 150px;
+}
+    .last-slide .last-slide__content .content:first-child img {
+    position: absolute;
+    left: 39px;
+    top: -40px;
+    }
+    .last-slide .last-slide__content {
+        align-items: flex-end;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header .middleheader .header__right{
+        display: none;
+    }
+    
+    .header .middleheader .header__logo img{
+        height: 100px;
+    }
+ .header .middleheader .menu{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 70px;
+    height: 70px;
+    
+ }
+ .header .middleheader .menu .bar{
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: blue;
+    
+ }
+    .image__first-p{
+    bottom: 60%;
+    width: 380px;
+    left: 25px;
+    height: 65px;   
+}
+.image__secondp
+{
+    bottom: 54.2%;
+    width: 300px;
+    left: 25px;
+}
+.service-info .news{
+    left: 121px;
+}
+.service-info .news .newsborder{
+    width: 80%;
+}
+footer .links,footer >img{
+    display: none;
+}
+footer .squer {
+    width: 100%;
+}
+footer .squer h1 {
+    text-align: center;
+}
+
+}
+@media only screen and (max-width: 582px) {
+    .image
+    {   background-position: 0px;
+        height: 500px;
+        background-repeat: no-repeat;
+    }
+    .image__first-p{
+    bottom: 60%;
+    width: 300px;
+    left: 25px;
+    height: 65px;   
+    
+}
+.image__secondp
+{
+    bottom: 45.2%;;
+    width: 240px;
+    left: 25px;
+}
+.image__first-p  p,
+.image__secondp p
+{
+    font-size: 1.2rem;
+}
+.image__bottom p{
+    left: 34%;
+    bottom: 43px;
+    font-size: 1rem;
+}
+.image__bottom img {
+    
+    height: 180px;
+}
+    
+.service-info .news{
+    left: 100px;
+}
+.service-info .news h1 {
+    font-size: 1rem;
+}
+.service-card .card {
+    width: 50vh;
+}
+.middle-slide .slides h1{
+    font-size: 2rem;
+}
+.last-slide{
+    height: 192vh;
+}
+}
